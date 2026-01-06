@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to NLP Course Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CV88TUMp3/396I55m6XpLbE7z8uG+Wd5y1iN4/x0z9r1n4y8r4uQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Custom styling for tables */
+        .course-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .course-table th,
+        .course-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb; /* Light border for rows */
+        }
+        .course-table th {
+            background-color: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+        }
+        .course-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+		
+		.course-table a {
+		  color: #800080; /* A common shade of purple */
+		}
+
+		/* Optional: To ensure visited links also stay purple */
+		a:visited {
+		  color: #800080; /* Same shade of purple */
+		}
+
+		/* Optional: To make links a slightly different shade when hovered or active */
+		.course-table a:hover,
+		a:active {
+		  color: #A020F0; /* A lighter or brighter shade of purple for interaction */
+		}
+		.fa-solid{
+			color:#e86100;
+		}
+		.fa-brands {
+			color:#E50914;
+		}
+    </style>
+</head>
+<body class="antialiased">
+    <a id="top"></a> <!-- Anchor to go to the top of the page -->
+    <div class="min-h-screen flex flex-col items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
+        <!-- Header Section -->
+        <header class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-6 mb-8">
+            <div class="flex flex-col sm:flex-row items-center justify-between">
+                <div class="text-center sm:text-left mb-4 sm:mb-0">
+                    <h1 class="text-4xl font-extrabold text-gray-900 mb-2">CS7.401 Introduction to NLP</h1>
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://www.iiit.ac.in/wp-content/uploads/2022/06/IIIT_Hyderabad_Logo-e1655116937986.jpg" width=200 alt="Course Logo" class="rounded-full shadow-md">
+                </div>
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav class="mt-6 border-t border-gray-200 pt-4">
+                <ul class="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6">
+                    <li><a href="#overview" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Overview</a></li>
+                    <li><a href="#logistics" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Logistics</a></li>
+                    <li><a href="#schedule" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Schedule</a></li>
+                    <li><a href="#grading" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Grading</a></li>
+					<li><a href="#timeline" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Important Dates</a></li>
+                    <li><a href="#projects" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Projects</a></li>
+                    <li><a href="#policies" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Policies</a></li>
+					<li><a href="#resources" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Other Resources</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Course Overview Section -->
+        <section id="overview" class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2 flex justify-between items-center">
+                Course Overview
+                <a href="#top" class="text-sm text-gray-500 hover:text-[#662273] transition duration-300">↑ Top</a>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Designed for those seeking an introduction, this course covers introductory topics in Natural Language Processing (NLP). It assumes foundational knowledge in mathematics and programming.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <!-- <li><strong>Timing:</strong> Mondays and Thursdays, 11:40-13:05</li> -->
+                <li><strong>Prerequisites:</strong> Mathematics, Python</li>
+            </ul>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">Instructors</h3>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-6">
+            	<div class="flex flex-col items-center mb-6">
+                	<img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=sIvMnGQAAAAJ&citpid=2" alt="Professor MS" class="rounded-full mb-3 shadow-md">
+                	<a href="https://manshri.in/" class="text-[#662273] hover:underline font-medium text-lg" target="_blank">Manish Shrivastava</a>(Primary)
+            	</div>
+            	<div class="flex flex-col items-center mb-6">
+                	<img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Kq5vVhkAAAAJ&citpid=1" alt="Professor MS" class="rounded-full mb-3 shadow-md">
+                	<a href="https://sites.google.com/uohyd.ac.in/parameswarikrishnamurthy/" class="text-[#662273] hover:underline font-medium text-lg" target="_blank">Parameswari Krishnamurthy</a>
+            	</div>
+			</div>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">Teaching Assistants</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-6">
+                <!-- TA 1 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/aa.jpeg" width=80 alt="Aparajitha" class="rounded-full mb-3 shadow-md">
+                    <a href="https://www.allamrajuaparajitha.com" class="text-[#662273] hover:underline font-medium" target="_blank">Aparajitha</a>
+                </div>
+                <!-- TA 2 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/sy.jpg" width=80 alt="Saumitra" class="rounded-full mb-3 shadow-md">
+                    <a href="https://researchweb.iiit.ac.in/~saumitra.yadav/" class="text-[#662273] hover:underline font-medium" target="_blank">Saumitra</a>
+<!-- 					Saumitra -->
+                </div>
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <!-- TA 6 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/abraham.jpg" width=80 alt="Abraham" class="rounded-full mb-5 shadow-md">
+					<a href="" class="text-[#662273] hover:underline font-medium" target="_blank">Abraham</a>
+                    <!-- <a href="https://ta6.example.com" class="text-[#662273] hover:underline font-medium" target="_blank">TBA</a> -->
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/aditya.jpeg" width=80 alt="Aditya" class="rounded-full mb-3 shadow-md">
+                    <a href="" class="text-[#662273] hover:underline font-medium" target="_blank">Aditya</a>
+                </div>
+                <!-- TA 2 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/Aryan.jpg" width=80 alt="Aryan" class="rounded-full mb-3 shadow-md">
+                    <a href="" class="text-[#662273] hover:underline font-medium" target="_blank">Aryan</a>
+<!-- 					Saumitra -->
+                </div>
+                <!-- TA 3 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/ayush.jpeg" width=80 alt="Ayush" class="rounded-full mb-3 shadow-md">
+                    <a href="" class="text-[#662273] hover:underline font-medium" target="_blank">Ayush</a>
+                </div>
+                <!-- TA 4 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/bhavya.jpg" width=80 alt="Ketaki" class="rounded-full mb-5 shadow-md">
+					<a href="" class="text-[#662273] hover:underline font-medium" target="_blank">Bhavya</a>
+                    <!-- <a href="https://ta4.example.com" class="text-[#662273] hover:underline font-medium" target="_blank">TBA</a> -->
+                </div>
+                <!-- TA 3 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/druhan.jpeg" width=80 alt="Druhan" class="rounded-full mb-3 shadow-md">
+                    <a href="" class="text-[#662273] hover:underline font-medium" target="_blank">Druhan</a>
+                </div>
+                <!-- TA 4 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/ketaki.jpg" width=80 alt="Ketaki" class="rounded-full mb-5 shadow-md">
+					<a href="https://www.linkedin.com/in/ketaki-shetye/" class="text-[#662273] hover:underline font-medium" target="_blank">Ketaki</a>
+                    <!-- <a href="https://ta4.example.com" class="text-[#662273] hover:underline font-medium" target="_blank">TBA</a> -->
+                </div>
+                <!-- TA 5 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/sahasra.jpg" width=80 alt="Sahasra" class="rounded-full mb-5 shadow-md">
+					<a href="" class="text-[#662273] hover:underline font-medium" target="_blank">Sahasra</a>
+                    <!-- <a href="https://ta5.example.com" class="text-[#662273] hover:underline font-medium" target="_blank">TBA</a> -->
+                </div>
+                <!-- TA 5 -->
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                    <img src="images/yajay.jpg" width=80 alt="Yajat" class="rounded-full mb-5 shadow-md">
+					<a href="" class="text-[#662273] hover:underline font-medium" target="_blank">Yajat</a>
+                    <!-- <a href="https://ta5.example.com" class="text-[#662273] hover:underline font-medium" target="_blank">TBA</a> -->
+                </div>
+     
+            </div>
+        </section>
+
+        <!-- Logistics Section -->
+        <section id="logistics" class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2 flex justify-between items-center">
+                Logistics
+                <a href="#top" class="text-sm text-gray-500 hover:text-[#662273] transition duration-300">↑ Top</a>
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <li><strong>Class Timing:</strong> Wednesdays & Saturdays, 8:30 - 9:55</li>
+                <li><strong>Location:</strong> H-105 </li>
+                <li><strong>Course Workload:</strong> This course will consist of approximately 28 lectures, 3 assignments, 2 quizes, 1 exam and 1 project.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                All course related annoucements will be made on Moodle.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">Teaching Assistant Office Hours</h3>
+            <div class="overflow-x-auto">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>TA Name</th>
+                            <th>Office Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aparajitha</td>
+                            <td>Wednesday: 10:00 - 11:00 (MT NLP Lab)</td>
+                        </tr>
+                        <tr>
+                            <td>Saumitra</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ketaki</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Druhan</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Yajat</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Abraham</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ayush</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bhavya</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Aryan</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sahasra</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Aditya</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Course Schedule Section -->
+        <section id="schedule" class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2 flex justify-between items-center">
+                Course Schedule
+                <a href="#top" class="text-sm text-gray-500 hover:text-[#662273] transition duration-300">↑ Top</a>
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="course-table">
+				    <thead>
+				      <tr style="text-align: right;">
+				        
+				        <th>#</th>
+				        <th style="width: 120px;">Date</th>
+				        <th>Topic</th>
+				        <th>Section</th>
+				        <th>Resources</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        
+				        <td style="border-bottom: 2px solid black;">1</td>
+				        <td style="border-bottom: 2px solid black;">3-Jan-26</td>
+				        <td  style="border-bottom: 2px solid black;" rowspan="1"><strong>Introduction</strong></td>
+				        <td style="border-bottom: 2px solid black;">Logistics, Introduction</td>
+				        <td style="border-bottom: 2px solid black;"> </td>
+				      </tr>
+
+				    </tbody>
+					
+					</table>
+            </div>
+        </section>
+
+
+        <!-- Grading/Weightage Section -->
+        <section id="grading" class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2 flex justify-between items-center">
+                Grading and Weightage
+                <a href="#top" class="text-sm text-gray-500 hover:text-[#662273] transition duration-300">↑ Top</a>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Your final grade in this course will be determined by the following components:</p>
+            <div class="overflow-x-auto">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Weightage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Assignments * 3</td>
+                            <td>5 + 5 + 10 (20%)</td>
+                        </tr>
+                        <tr>
+                            <td>Quiz * 2</td>
+                            <td>7.5 + 7.5 (15%)</td>
+                        </tr>
+                        <tr>
+                            <td>Project</td>
+                            <td>40%</td>
+                        </tr>
+                        <tr>
+                            <td>Final Exam</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+		
+        <!-- Timeline Section -->
+        <section id="timeline" class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2 flex justify-between items-center">
+                Due Dates
+                <a href="#top" class="text-sm text-gray-500 hover:text-[#662273] transition duration-300">↑ Top</a>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-4">Important dates for the course:</p>
+            <div class="overflow-x-auto">
+                <table class="course-table">
+				<!-- <table border="1"> -->
+				  <thead>
+				    <tr>
+				      <th>Component</th>
+				      <th>Due Date</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+
+				  </tbody>
+				</table>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2 flex justify-between items-center">
+                Course Projects
+                <a href="#top" class="text-sm text-gray-500 hover:text-[#662273] transition duration-300">↑ Top</a>
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                The course project is a significant component of this course (40%), providing an opportunity to apply the concepts
+                and techniques learned to a real-world NLP problem. Students will work in teams of <strong>x</strong>
+                to propose, develop, and present a project. Projects are expected to be at an advanced level. Submission to conferences/workshops is highly encouraged. Read more on <a href="#consult-policy" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">research opportunities</a>.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <li><strong>Interim Project Proposal:</strong> A brief document outlining your project idea in a couple of paragraphs.</li>
+				<li><strong>Project Proposal:</strong> A document outlining your project idea, backgroud, goals, dataset, and methodology in 2-3 pages.</li>
+                <li><strong>Mid Submission:</strong> Mid checkin on your progress.</li>
+                <li><strong>Final Submission:</strong> A comprehensive paper/report detailing your project, experiments, results, and conclusions along with code/other resources and presentation or demonstration of your project.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed">
+                We encourage students to think creatively and explore
+                areas that genuinely interest them.
+            </p>
+			<br/>
+
+            <div class="overflow-x-auto">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Weightage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Project Outline</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>Project Mid</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>Project Final</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>40%</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+		    <!-- <div class="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
+		      <h2 class="text-2xl font-bold mb-4 text-gray-800">Project Areas</h2>
+		      <ul class="list-disc list-inside space-y-2 text-gray-700">
+		        <li>Efficient/Low-Resource Methods</li>
+		        <li>Ethics, Fairness, Bias</li>
+		        <li>Generation/Language Modeling</li>
+		        <li>Interpretability/Explainability</li>
+		        <li>Multilingual/Cross-lingual</li>
+		        <li>Multimodal</li>
+		        <li>NLP Applications
+		            <li>Evaluation/Benchmarking</li>
+		            <li>Retrieval & Extraction</li>
+		            <li>Document Understanding</li>
+		            <li>Graph + LLMs</li>
+		            <li>Entertainment + LLM</li>
+					<li>Data Resources</li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div>
+			 -->
+ 			   <div class="bg-white p-6 rounded-lg shadow-md w-full"> <h2 class="text-2xl font-bold mb-4 text-gray-800">Project Areas</h2>
+    			   <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8">
+ 			           <ul class="list-disc list-inside space-y-2 text-gray-700">
+			             <li>Efficient/Low-Resource Methods</li>
+			             <li>Ethics, Fairness, Bias</li>
+			             <li>Generation/Language Modeling</li>
+			             <li>Interpretability/Explainability</li>
+			             <li>Multilingual/Cross-lingual</li>
+			             <li>Multimodal</li>
+			             <li>NLP Applications
+			             <li>Evaluation/Benchmarking</li>
+			             <li>Retrieval & Extraction</li>
+			             <li>Document Understanding</li>
+			             <li>Graph + LLMs</li>
+			             <li>Entertainment + LLM</li>
+			           </ul>
+			       </div>
+			     </div>
+			
+        </section>
+
+        <!-- Assignments and Project Policies Section -->
+        <section id="policies" class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2 flex justify-between items-center">
+                Assignments and Project Policies
+                <a href="#top" class="text-sm text-gray-500 hover:text-[#662273] transition duration-300">↑ Top</a>
+            </h2>
+
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 mt-6">Late Submission Policy</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Assignment and project deadlines are strictly enforced. Late submissions will not be allowed and no extensions will be provided.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 mt-6">Collaboration Policy</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Collaboration on assignments is encouraged for discussion of concepts and general approaches, but all submitted answers must be your individual work. For projects, group collaboration is expected, and the contribution of each member should be clearly documented. Any specific collaboration guidelines for individual assignments or projects will be provided with the assignment description.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 mt-6">Consultation and Research Opportunities</h3>
+            <p id="consult-policy" class="text-gray-700 leading-relaxed mb-4">
+                Students are highly encouraged to consult with the instructor, teaching assistants and mentors during office hours or by appointment for guidance on assignments, projects, or course topics. If a project developed in this course shows significant potential for a research paper, students may, at their discretion, invite a TA, a mentor or the instructor whose advice substantially benefited the work to be a co-author. This is not a requirement, but an opportunity to acknowledge significant contributions and foster academic collaboration.
+            </p>
+        </section>
+		
+        <!-- Extra Resources -->
+        <section id="resources" class="w-full max-w-5xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2 flex justify-between items-center">
+                Other Resources
+                <a href="#top" class="text-sm text-gray-500 hover:text-[#662273] transition duration-300">↑ Top</a>
+            </h2>
+		   <!-- <div class="bg-white p-6 rounded-lg shadow-md w-full"> -->
+ 			   <div class="grid grid-cols-1 sm:grid-cols-1 gap-x-8">
+		           <ul class="list-disc list-inside space-y-2 text-gray-700">
+		             <li>Deep Learning by Ian Goodfellow <a href="https://www.deeplearningbook.org" target="_blank" style="color:purple">(Book)</a></li>
+		             <li>Understanding Deep Learning by Simon Prince (Book)</li>
+		             <li>Mathematics for Machine Learning by Deisenroth, Faisal, Ong (Book)</li>
+					 <li><a href="https://docs.pytorch.org/tutorials/" target="_blank" style="color:purple">PyTorch Tutorials</a></li>
+					 <li><a href="https://huggingface.co/learn/llm-course/chapter1/1" target="_blank" style="color:purple">🤗 Transformers</a></li>
+		           </ul>
+		       </div>
+		     <!-- </div> -->
+
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="w-full max-w-5xl text-center text-gray-600 text-sm py-4">
+            <p>&copy; 2026 LTRC NLP. All rights reserved. <!-- | <a href="#" class="text-[#662273] hover:underline">Privacy Policy</a> | <a href="#" class="text-[#662273] hover:underline">Terms of Service</a> --></p>
+        </footer>
+    </div>
+</body>
+</html>
